@@ -34,6 +34,4 @@ if(is_admin()){
   // Load Custom Post Type
   require_once(plugin_dir_path(__FILE__) . '/inc/code-snippets-repo-cpt.php');
 
-  // Load Custom Fields
-  require_once(plugin_dir_path(__FILE__) . '/inc/code-snippets-repo-fields.php');
 }
