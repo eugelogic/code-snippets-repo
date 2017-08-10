@@ -1,0 +1,7 @@
+.type-snippet {
+  background-color: yellow;
+  border-bottom: 1px solid #f9f497;
+}
+.type-snippet.entry-title {
+  font-size: 50%;
+}
