@@ -29,9 +29,5 @@ if( ! defined( 'ABSPATH' ) ) exit;
 // Load Scripts
 require_once(plugin_dir_path(__FILE__) . '/inc/code-snippets-repo-scripts.php');
 
-// Check if admin
-if(is_admin()){
-  // Load Custom Post Type
-  require_once(plugin_dir_path(__FILE__) . '/inc/code-snippets-repo-cpt.php');
-
-}
+// Load Custom Post Type
+require_once(plugin_dir_path(__FILE__) . '/inc/code-snippets-repo-cpt.php');
