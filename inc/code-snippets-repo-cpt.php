@@ -26,7 +26,7 @@
     $args = array(
         'labels'             => $labels,
         'description'        => __('Description.', 'code-snippets-repo'),
-        // 'taxonomies'         => array('category'),
+        'taxonomies'         => array('category'),
         'public'             => true,
         'publicly_queryable' => true,
         'show_ui'            => true,
