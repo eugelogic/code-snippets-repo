@@ -1,7 +1,8 @@
 .type-snippet {
-  background-color: yellow;
-  border-bottom: 1px solid #f9f497;
+  background-color: #f9f497;
+  border-bottom: 1px solid white;
 }
+
 .type-snippet.entry-title {
   font-size: 50%;
 }
