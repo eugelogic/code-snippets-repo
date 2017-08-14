@@ -48,60 +48,6 @@
   }
   add_action('init', 'csr_register_snippet');
 
-  // Create Code Language Taxonomy
-  function csr_language_taxonomy(){
-    register_taxonomy(
-      'language',
-      'snippet',
-      array(
-        'label' => 'Languages',
-        'query_var' => true,
-        'rewrite' => array(
-          'slug' => 'language',
-          'with_front' => true
-        ),
-        'hierarchical' => true
-        )
-    );
-  }
-  add_action('init', 'csr_language_taxonomy', 0);
-
-  // Create Web Tool Taxonomy
-  function csr_tool_taxonomy(){
-    register_taxonomy(
-      'tool',
-      'snippet',
-      array(
-        'label' => 'Tools',
-        'query_var' => true,
-        'rewrite' => array(
-          'slug' => 'tool',
-          'with_front' => true
-        ),
-        'hierarchical' => true
-        )
-    );
-  }
-  add_action('init', 'csr_tool_taxonomy', 0);
-
-  // Create IT Project Taxonomy
-  function csr_project_taxonomy(){
-    register_taxonomy(
-      'project',
-      'snippet',
-      array(
-        'label' => 'Projects',
-        'query_var' => true,
-        'rewrite' => array(
-          'slug' => 'project',
-          'with_front' => true
-        ),
-        'hierarchical' => false
-        )
-    );
-  }
-  add_action('init', 'csr_project_taxonomy', 0);
-
   register_activation_hook(__FILE__, function () {
     csr_register_snippet();
     flush_rewrite_rules();
